@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.tushar</groupId>
-    <artifactId>emx-app</artifactId>
+    <artifactId>emx-digital</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
