@@ -16,6 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <revelc.code.formatter.plugin.version>2.15.0</revelc.code.formatter.plugin.version>
     </properties>
 
     <dependencies>
@@ -29,5 +30,25 @@
 
     <build>
         <finalName>emx-digital</finalName>
+        <plugins>
+            <plugin>
+                <groupId>net.revelc.code.formatter</groupId>
+                <artifactId>formatter-maven-plugin</artifactId>
+                <version>${revelc.code.formatter.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>validate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <compilerSource>${maven.compiler.source}</compilerSource>
+                    <compilerCompliance>${maven.compiler.source}</compilerCompliance>
+                    <compilerTargetPlatform>${maven.compiler.target}</compilerTargetPlatform>
+                    <configFile>${project.basedir}/eclipse-java-google-style.xml</configFile>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>
