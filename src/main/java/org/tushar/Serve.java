@@ -45,7 +45,7 @@ public class Serve extends HttpServlet {
                 responseStr = "https://www.linkedin.com/in/etushar89/";
                 break;
             case "Source":
-                responseStr = "github.com";
+                responseStr = "https://github.com/etushar89/emx-digital.git";
                 break;
             case "Status":
                 responseStr = "Yes";
