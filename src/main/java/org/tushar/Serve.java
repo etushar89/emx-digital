@@ -42,7 +42,7 @@ public class Serve extends HttpServlet {
                 responseStr = "Andrew R.";
                 break;
             case "Resume":
-                responseStr = "https://www.linkedin.com/in/etushar89/";
+                responseStr = "http://35.170.55.77:8080/emx-app/Resume.pdf";
                 break;
             case "Source":
                 responseStr = "https://github.com/etushar89/emx-digital.git";
